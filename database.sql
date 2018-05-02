@@ -42,3 +42,7 @@ A: DELETE FROM "accounts"
    AND "transactions_completed" < 5
    OR "city" = 'phoenix'
    AND "transactions_completed" < 5;
+
+   DELETE FROM "accounts"
+   WHERE ("city" = 'miami' OR "city" = 'phoenix')
+   AND "transactions_completed" < 5;
